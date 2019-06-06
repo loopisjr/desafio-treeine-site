@@ -3,7 +3,7 @@
 
 Desenvolva uma solução simples que deve funcionar como site de apresentação da Loopis. 
 
-### ConteÚdo
+### Conteúdo
 
 O site deve apresentar no minimo:
  
@@ -15,6 +15,8 @@ O site deve apresentar no minimo:
 * Galeria; 
 * Contato e localização;
 
+> A equipe pode adicionar mais informações 
+
 ### Metodologia e avaliação 
 
 O desafio deve ser planejado e executado em equipe, que deve manter comunicação transaparente e dividir as responsabilidades.
@@ -23,4 +25,5 @@ Será criterio de avalição:
 * Organização da equipe; 
 * Controle de versão;
 * Criatividade;
+
 

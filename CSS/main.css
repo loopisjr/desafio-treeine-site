@@ -60,7 +60,7 @@
     content: ' ';
     width: 50px;
     position: absolute;
-    border-bottom: 3px solid purple;
+    border-bottom: 3px solid #3A5FCD;
     bottom: 0;
     right: 150px;
     transition: 0.5s all;
@@ -78,6 +78,7 @@
 }
 .main_menu .logo_menu img{ 
     max-width:40%;
+    margin: -10%;
 }
 /*Pagina Inical*/
 .main_loopis{
@@ -98,7 +99,7 @@
     justify-content: center;
 }
 .main_loopis img{
-    max-width: 100%;
+    max-width: 90%;
 }
 .main_loopis .bt_mais{
     width:120px;
@@ -134,7 +135,7 @@
 	transform: scaleX(0);
 	z-index: -1;
 	border-radius: 3px;
-	background-color: purple;
+	background-color: #3A5FCD;
 }
 .bt_mais :hover:before{
     transition:transform 0.5s;

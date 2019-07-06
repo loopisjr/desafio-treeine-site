@@ -15,6 +15,7 @@
     background-color: white;
     background-image: repeating-linear-gradient(to bottom right, white 99%, rgba(0, 0, 0, .17));
     background-attachment: fixed;
+    /*cria o efeito anterior e com o fixed ele fica fizo na tela e quando acontece a rolagem fica um efeito bem legal, pois não se move *\
 }
 /*Menu*/
 .main_menu{

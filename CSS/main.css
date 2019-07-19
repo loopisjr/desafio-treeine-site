@@ -12,17 +12,8 @@
     align-items:center;
     align-content: flex-start;
     justify-content: center;
-<<<<<<< HEAD
-    background-color: white;
-    background-attachment: fixed;
-    background-position: center;
-    background-color: #f5f5f5f5;
-=======
     background: rgb(0,25,59);
-background: linear-gradient(176deg, rgba(0,25,59,1) 5%, rgba(0,19,48,1) 10%, rgba(1,12,36,1) 20%, rgba(1,16,42,1) 35%, rgba(2,3,22,1) 80%);
-
->>>>>>> novo-layout
-    /*cria o efeito anterior e com o fixed ele fica fizo na tela e quando acontece a rolagem fica um efeito bem legal, pois não se move */
+    background: linear-gradient(176deg, rgba(0,25,59,1) 5%, rgba(0,19,48,1) 10%, rgba(1,12,36,1) 20%, rgba(1,16,42,1) 35%, rgba(2,3,22,1) 80%);
 }
 /*Menu*/
 .main_menu{
@@ -127,29 +118,18 @@ background: linear-gradient(176deg, rgba(0,25,59,1) 5%, rgba(0,19,48,1) 10%, rgb
     align-content: space-around;
 }
 .main_loopis .logo_home{
-<<<<<<< HEAD
-    width: 45%;
-    height: 200px;
-=======
     width: 60%;
     height: 400px;
->>>>>>> novo-layout
     display: flex;
     flex-direction: row;
     align-content: center;
     align-items: center;
     justify-content: center;
-    background-image: url(../IMG/LoopisFundoAzul.png);
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    border-radius: 3px;
-    border: solid 1px;
 }
 .main_loopis img{
     max-width: 65%;
 }
-/*COnfiguração dos cards da pagina inicial*/
+/*Configuração dos cards da pagina inicial*/
 .main_cards{
     width: 80%;
     height: 200px;
@@ -158,45 +138,6 @@ background: linear-gradient(176deg, rgba(0,25,59,1) 5%, rgba(0,19,48,1) 10%, rgb
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-around;
-}
-.card{
-<<<<<<< HEAD
-    width: 27%;
-    height: 220px;
-    color: black;
-    border-radius: 3px;
-    background-color: white;
-    border: solid 0.8px black;
-}
-.card h2{
-    text-align: center;
-    margin: 15px;
-    padding: 5px;
-}
-.card p{
-    width: 80%;
-    margin-left:10%;
-    padding: 8px;
-=======
-    width: 28%;
-    height: 230px;
-    color: white;
-    border-radius: 3px;  
-    background-color: white transparent;
-    border: solid 1px #4F4F4F;
-}
-.card h2{
-    margin-left: -5%;
-    padding: 15px;
-    width: 100%;
-    text-align: center;
-}
-.card p{
-    max-width: 75%;
-    text-align: left;
-    margin-left: 15%;
-    padding-top:15px;  
->>>>>>> novo-layout
 }
 .main_rodape{
     width: 60%;

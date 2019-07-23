@@ -1,10 +1,11 @@
-function Chamar_Sobre(){
-    document.getElementById('main_loopis').style = "display: none";
-    document.getElementById('main_cards').style = "display: none";
-    document.getElementById('main_sobre').style = "display: block";
-}
-function Chamar_Home(){
-    document.getElementById('main_loopis').style = "display: block";
-    document.getElementById('main_cards').style = "display: block";
-    document.getElementById('main_sobre').style = "display: none";
+//Função Jquery para animação do scroll da página.
+function anima_scroll(){
+    $('nav a').click(function(e){
+        e.preventDefault();
+        var id = $(this).attr('href'),
+            targetOffset = $(id).offset().top;
+        $('html,body').animate({
+            scrollTop:  targetOffset
+        }, 500);
+    });
 }

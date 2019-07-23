@@ -6,11 +6,13 @@
     <title>Home</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='CSS/main.css'>
-    <script src='main.js'></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="icon" href="IMG/iconSite.png">
+    <script src='JS/main.js'></script>
+    <!--Links Externos-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
-<body>
+<body onload="anima_scroll()">
     <div class="main_menu">
         <div class="logo_menu">
             <a href="Index.html">
@@ -20,8 +22,8 @@
         <nav class="menu">
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#main_equipe">Sobre</a></li>
-                <li><a href="#main_sobre">Equipe</a></li>
+                <li><a href="#main_sobre">Sobre</a></li>
+                <li><a href="#main_equipe">Equipe</a></li>
             </ul>
         </nav>
     </div>
@@ -34,6 +36,12 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <section id="main_sobre">
+            <div class="sobre"></div>
+        </section>
+        <section id="main_equipe">
+            <div class="equipe"></div> 
         </section>
         <div class="main_rodape"></div>
     </div>

@@ -5,7 +5,7 @@
 }
 .main{
     width: 100%;
-    height: 1500px;
+    max-height: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -37,8 +37,10 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-end;
-    align-content: space-around;
+    justify-content: space-around;
+    align-content: space-between;
+    align-items: center;
+
 }
 .menu ul{
     list-style: none;
@@ -48,6 +50,7 @@
 .menu ul li{
     width: 110px;
     float: left;
+
 }
 .menu ul li a{
     text-align: left;
@@ -95,7 +98,7 @@
 /*Pagina Inical*/
 .main_home{
     width: 100%;    
-    height: 669px;
+    height: 700px;
 }
 .Home{
     width: 100%;
@@ -129,17 +132,71 @@
 .main_loopis img{
     max-width: 65%;
 }
-/*Configuração dos cards da pagina inicial*/
-.main_cards{
-    width: 80%;
-    height: 200px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-around;
+/*Página Sobre*/
+#main_sobre{
+    width: 100%;    
+    height:700px;
 }
-.main_rodape{
-    width: 60%;
-    height: 8px;
+/*Página Equipe*/
+#main_equipe{
+    width: 100%;
+    height: 700px;
+}
+/*Pagina Serviços*/
+#main_service{
+    width: 100%;
+    height: 700px;
+}
+.service{
+    width: 100%;
+    height: 670px;
+    overflow: hidden;
+    position: relative;
+    top:10%;
+}
+.title{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.linha{
+    width: 200px;
+    height: 2px;
+    background-color: #2196f3;
+    margin: 40px auto;
+}
+.conteiner_service{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card_service{
+    max-width: 28%;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+.icon_service{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border: solid 3px #2196f3;
+    transform: rotate(45deg);
+    margin-bottom: 30px;
+    margin-top: 16px;
+    transition: 0.3s linear;
+}
+.icon_service i{
+    line-height: 70px;
+    transform: rotate(-45deg);
+    font-size: 26px;
+}
+.card_service:hover .icon_service{
+    background-color: white;
+    color: #2196f3;
+}
+.desc{
+    font-size: 14px;
 }

@@ -6,6 +6,6 @@ function anima_scroll(){
             targetOffset = $(id).offset().top;
         $('html,body').animate({
             scrollTop:  targetOffset
-        }, 500);
+        }, 600);
     });
 }

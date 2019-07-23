@@ -64,7 +64,7 @@
 }
 .main_menu li a:before{
     content: ' ';
-    width: 50px;
+    width: 60px;
     position: absolute;
     border-bottom: 3px solid white;
     bottom: 0;
@@ -73,7 +73,7 @@
     border-radius: 3px;
 }
 .main_menu li a:hover:before{
-    right: 12px;
+    right:35px;
 }
 .main_menu h2{
     width: 100px;

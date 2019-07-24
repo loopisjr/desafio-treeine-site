@@ -26,6 +26,7 @@
                 <li><a href="#main_sobre">Sobre</a></li>
                 <li><a href="#main_equipe">Equipe</a></li>
                 <li><a href="#main_service">Serviços</a></li>
+                <li><a href="#main_contato">Contato</a></li>
             </ul>
         </nav>
     </div>
@@ -104,6 +105,44 @@
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae aliquid beatae exercitationem laudantium maiores tempora sed error neque optio earum! Ex ducimus a laboriosam ullam! Assumenda facere minus repellendus porro.
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section id="main_contato">
+            <div class="contato">
+                <h1 class="title">Contato</h1>
+                <div class="conteiner_contato">
+                    <form>
+                        <fieldset>
+                            <legend>Dados Pessoais</legend>
+                            <label class="contato" for="nome">Nome Completo:</label>
+                            <input id="nome" type="text" name="nome" required autofocus pattern="[A-Za-z ']{4,}" title="O nome precisa ter pelo menos 4 caracteres" placeholder="Seu nome aqui">
+
+                            <label class="contato" for="email">E-mail:</label>
+                            <input id="email" type="email" name="email" required placeholder="seu@email.com">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Assunto</legend>
+                                <label>
+                                    <input type="radio" name="assunto" value="EntrarParaEmpresa">
+                                    Entrar para a empresa
+                                </label>
+                                <label>
+                                    <input type="radio" name="assunto" value="Serviços">
+                                    Serviços
+                                </label>
+                                <label>
+                                    <input type="radio" name="assunto" value="Outro">
+                                    Outro
+                                    <input type="text" name="outro-assunto">
+                                </label>
+                        </fieldset>
+                        <fieldset>
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" cols="70" rows="10" placeholder="Digite aqui sua mensagem"></textarea>
+                            <button type="submit">Enviar mensagem</button>
+                        </fieldset>
+                    </form>
                 </div>
             </div>
         </section>

@@ -31,7 +31,7 @@
     position: fixed;
 }
 .menu{
-    width: 35%;
+    width: 45%;
     height: 38px;
     z-index: 10;
     display: flex;
@@ -199,4 +199,58 @@
 }
 .desc{
     font-size: 14px;
+}
+
+/*Contato*/
+
+.contato{
+    color: #2196f3;
+}
+legend,
+label[for="mensagem"] {
+    font-weight: bold;
+    margin-top: 1em;
+}
+label[for],
+button {
+    display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    padding: .25em .5em;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid blue;
+}
+button {
+    border: 0;
+    padding: .5em 1em;
+    font-family: "Open Sans Condensed", sans-serif;
+    background-color: rgb(0,25,59);
+    color: white;
+    font-size: 1.2em;
+    margin-left: auto;
+    margin-top: 1em;
+}
+input:invalid {
+    box-shadow: 0 0 3px blue;
+}
+input:focus,
+textarea:focus {
+    background-color: #FFD;
+}
+button:focus {
+    background-color: #2196f3;
+}
+input[value="Outro"] + input {
+    display: none;
+}
+input[value="Outro"]:checked + input {
+    display: block;
+}
+fieldset{
+    border-color: rgb(0,25,59);
 }

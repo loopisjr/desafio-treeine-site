@@ -92,7 +92,9 @@
 .main_menu .logo_menu img{ 
     max-width:35%;
 }
+
 /*Pagina Inical*/
+
 .main_home{
     width: 100%;    
     height: 700px;
@@ -131,17 +133,32 @@
 .main_loopis img{
     max-width: 65%;
 }
+
 /*Página Sobre*/
+
 #main_sobre{
     width: 100%;    
     height:700px;
 }
-/*Página Equipe*/
-#main_equipe{
-    width: 100%;
-    height: 700px;
+h2{
+    text-align: center;
+    color: white;
 }
+#missao{
+    color: white;
+}
+.valores_empresa{
+    color: white;
+}
+
+/*Página Projetos*/
+
+#main_projetos{
+
+}
+
 /*Pagina Serviços*/
+
 #main_service{
     width: 100%;
     height: 720px;
@@ -199,8 +216,12 @@
 .desc{
     font-size: 14px;
 }
+.area_atuacao{
+    color: white;
+}
 
 /*Contato*/
+
 #main_contato{
     width: 100%;
     height: 700px;

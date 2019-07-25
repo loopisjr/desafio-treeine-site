@@ -148,6 +148,9 @@ h2{
 .valores_empresa{
     color: white;
 }
+.instagram{
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+}
 
 /*Página Projetos*/
 

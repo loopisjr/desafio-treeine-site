@@ -9,3 +9,22 @@ function anima_scroll(){
         }, 600);
     });
 }
+
+/*
+
+<canvas id="myCanvas"></canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+ctx.font = "30px Verdana";
+var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
+gradient.addColorStop("0", "yellow");
+gradient.addColorStop("0.255", "magenta");
+gradient.addColorStop("0.755", "purple");
+ctx.fillStyle = gradient;
+ctx.fillText("Instagram", 10, 90);
+</script>
+
+*/

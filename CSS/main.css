@@ -143,13 +143,26 @@ h2{
     color: white;
 }
 #missao{
-    color: white;
+    color: white; 
 }
 .valores_empresa{
     color: white;
 }
 .instagram{
     background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+}
+.sobre{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex: 1;
+    flex-grow: 50%;
+}
+.links_redes_sociais{
+    align-content: flex-start;
 }
 
 /*Página Projetos*/

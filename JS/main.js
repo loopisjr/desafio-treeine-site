@@ -8,6 +8,9 @@ function anima_scroll(){
             scrollTop:  targetOffset
         }, 600);
     });
+    $(".mostrar-bt").click(function(){
+        $(".icones").fadeToggle("fast");
+    });
 }
 
 /*

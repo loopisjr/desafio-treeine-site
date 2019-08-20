@@ -15,84 +15,89 @@
     background-color: black;
 }
 /*Menu*/
-.main_menu{
-    width:100%;
+.menu-icon{
+    display: none;
+}
+.navbar{
+    width: 100%;
     height: 50px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items:stretch;
-    align-content:space-around;
-    justify-content: space-around;
-    color: black;
-    position: relative;
-    background-color: black;
     position: fixed;
-    z-index: 10;
-}
-.menu{
-    width: 40%;
-    height: 38px;
+    top: 0;
     display: flex;
     flex-direction: row;
-    align-content: flex-end;
-    justify-content: flex-end;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
     z-index: 10;
 }
-.menu ul{
-    list-style: none;
-    position: relative;
-    text-align: center;
+.change{
+    left: 0;
 }
-.menu ul li{
+.menu-lista{
+    width: 70%;
+    height: 48px;
+    text-align:center;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu-item{
+    list-style: none;
+    margin: 12px;
     float: left;
 }
-.menu ul li a{
-    text-align: center;
-    font-size: 19px;
+.menu-item a{
     text-decoration: none;
-    color:white;   
-    position: relative;
-    font-weight: 700;
-    display: block;
-    overflow: hidden;
-    transition: 0.7s all;       
-    padding: 10px 10px;
+    color: white;
+    font-size: 19px;
+    letter-spacing: 1px;
     text-transform: uppercase;
+    position: relative;
+    padding: 3px 0;
 }
-.main_menu li a:before{
-    content: ' ';
-    width: 60px;
+.menu-item a::after{
+    content: " ";
+    width: 100%;
+    height: 2px;
+    background-color: white;
     position: absolute;
-    border-bottom: 3px solid white;
+    left: 0;
+    transform: scaleX(0);
+    transition: all 0.3s;
+}
+.menu-item a::after{
     bottom: 0;
-    right: 150px;
-    transition: 0.5s all;
-    border-radius: 3px;
 }
-.main_menu li a:hover:before{
-    right:35px;
+.menu-item a:hover::after{
+    transform: scaleX(1)
 }
-.main_menu h2{
-    width: 100px;
-    text-align: center;
-}
-.main_menu .logo_menu{ 
-    width: 20%;
-    height: 38px;
+.logo{
+    width: 10%;
+    height: 48px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     align-content: center;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: center;
 }
-.main_menu .logo_menu img{ 
-    max-width:35%;
+.logo img{
+    max-width: 70%;
+    position: relative;
+    top: 25%;
+    left: 15%;
+}
+
+/*Personalização da barra de scroll*/
+::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+    border-radius: 2px;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: #f5f5f5;
+}
+::-webkit-scrollbar-thumb {
+    background: #9E9E9E;
 }
 
 /*Pagina Inical*/
-
 .main_home{
     width: 100%;    
     height: 700px;
@@ -133,11 +138,14 @@
 }
 
 /*Página Sobre*/
-
 #main_sobre{
     width: 100%;    
     height:700px;
     background-color: #f5f5f5;
+    background-image: url('../IMG/fundo.png');
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    opacity: .9;
 }
 .sobre{
     width: 100%;
@@ -145,6 +153,10 @@
     overflow: hidden;
     position: relative;
     top:10%;
+   
+}
+.sobre h1{
+    color: white !important;
 }
 .sobre_cards{
     width: 80%;
@@ -157,12 +169,14 @@
     align-content: space-around;
     justify-content: space-around;
     align-items: center;
+    z-index: 10;
 }
 .sobre_cards .card{
     width: 33.33%;
     height: 220px;
-    border: solid 1px #696969;
+    border: solid 1px #f5f5f5;
     border-radius: 3px;
+    color: #f5f5f5;
 }
 .sobre_cards .atuacao{
     width: 50% !important;
@@ -184,8 +198,8 @@
     width: 80%;
     margin: 10px auto;
 }
-/*Página Projetos*/
 
+/*Página Projetos*/
 #main_projetos{
     width: 100%;
     height: 720px;
@@ -193,7 +207,6 @@
 }
 
 /*Pagina Serviços*/
-
 #main_service{
     width: 100%;
     height: 750px;
@@ -220,9 +233,13 @@
     margin: 20px auto;
 }
 .conteiner_service{
+    width: 100%;
+    height: 500px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
+    align-content: center;
 }
 .card_service{
     max-width: 28%;
@@ -230,6 +247,10 @@
     text-align: center;
     color: black;
     cursor: pointer;
+}
+.service_title{
+    font-size: 18px;
+    font-weight: bold;
 }
 .icon_service{
     display: inline-block;
@@ -269,10 +290,11 @@
     height: 700px;
     overflow: hidden;
     position: relative;
-    top:10%;
+    top:0%;
 }
 .conteiner_contato{
     width: 100%;
+    height: 700px;
     position: relative;
     top:8%;
     display: flex;
@@ -288,6 +310,9 @@
     flex-wrap: wrap;
     justify-content: center;
     align-content: space-around;
+}
+.formulario h2{
+    display: none;
 }
 .formulario h3{
     width: 93%;
@@ -423,4 +448,446 @@ input[value="Outro"]:checked + input {
     height: 22px;
     margin: 8px auto;
     font-weight: bold;
+}
+/*Responsivo*/
+@media all and (min-width: 10px) and (max-width: 768px) and (orientation: portrait){
+    .menu-icon{
+        width: 35px;
+        height: 30px; 
+        cursor: pointer;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-content: space-around;
+        position: fixed;
+        top: 25px;
+        left: 25px;
+        z-index: 10; 
+    }
+    .menu-linha{
+        width: 100%;
+        height: 2.6px;
+        border-radius: 1px;
+        background-color:rgba(0,25,59,1);
+        transition:  all 0.8s;
+    }
+    .change .linha1{
+        transform: rotateZ(-45deg) translate(-8px, 6px);
+    }
+    .change .linha2{
+        opacity: 0;
+    }
+    .change .linha3{
+        transform: rotateZ(45deg) translate(-8px, -6px);
+    }
+    .navbar{
+        width: 190px;
+        height: 100%;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        left: -300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: left 0.8s cubic-bezier(1,0,0,1);
+    }
+    .change{
+        left: 0;
+    }
+    .menu-lista{
+        width: 180px;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+    }
+    .menu-item{
+        list-style: none;
+        margin: 25px;
+    }
+    .menu-item a{
+        text-decoration: none;
+        color: white;
+        font-size: 19px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        position: relative;
+        padding: 3px 0;
+        text-align: left;
+    }
+    .menu-item a::before,.menu-item a::after{
+        content: " ";
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        left: 0;
+        transform: scaleX(0);
+        transition: all 0.5s;
+    }
+    .menu-item a::after{
+        bottom: 0;
+    }
+    .menu-item a::before{
+        top: 0;
+    }
+    .menu-item a:hover::before,.menu-item a:hover::after{
+        transform: scaleX(1)
+    }
+    .logo{
+        display: none;
+    }
+    /*Pagina Inical*/
+    .main_home{
+        width: 100%;    
+        height: 700px;
+        background: rgb(0,25,59);
+        background: linear-gradient(176deg, rgba(0,25,59,1) 5%, rgba(0,19,48,1) 10%, rgba(1,12,36,1) 20%, rgba(1,16,42,1) 35%, rgba(2,3,22,1) 80%);
+    }
+    .Home{
+        width: 100%;
+        height: 669px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-around;
+        align-items: center;
+    }
+    .main_loopis{
+        width: 100%;
+        height: 260px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: space-around;
+    }
+    .main_loopis .logo_home{
+        width: 75%;
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        margin-top:-15%; 
+    }
+    .main_loopis img{
+        max-width: 70%;
+    }
+
+    /*Página Sobre*/
+    #main_sobre{
+        width: 100%;    
+        height:1500px;
+        background-color: #f5f5f5;
+        background-image: none;
+        background-repeat: no-repeat; 
+        background-size: 100%;
+        opacity: 1;
+        z-index: 4;
+        color: black;
+    }
+    .sobre{
+        width: 100%;
+        height: 1500px;
+        position: relative;
+        top:2%;
+        opacity: 1;
+    }
+    .sobre h1{
+        color: black !important;
+    }
+    .sobre_cards{
+        width: 100%;
+        height: 1500px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: flex-start;
+        justify-content:space-around;
+    }
+    .sobre_cards .card{
+        width: 90%;
+        height: 325px;
+        border: solid 1px black;
+        border-radius: 3px;
+        color: black;
+        margin: 10px auto;
+    }
+    .sobre_cards .atuacao{
+        width: 90% !important;
+    }
+    .sobre_cards .valores{
+        width: 90% !important;
+    }
+    .title_cards{
+        text-align: center;
+        width: 100%;
+        margin: 10px auto;
+    }
+    .desc_sobre{
+        width: 90%;
+        margin: 6px auto;
+        font-size: 16px;
+    }
+    .sobre ul{
+        width: 80%;
+        margin: 10px auto;
+    }
+    /*Pagina Serviços*/
+    #main_service{
+        width: 100%;
+        height: 850px;
+        background-color: #f5f5f5;
+    }
+    .service{
+        width: 100%;
+        height: 800px;
+        overflow: hidden;
+        position: relative;
+        top:10%;
+    }
+    .title{
+        text-align: center;
+        color:black;
+        text-transform: uppercase;
+        font-size: 30px;
+    }
+    .linha{
+        width: 200px;
+        height: 2px;
+        border-radius: 3px;
+        background-color: rgba(0,25,59,1);
+        margin: 15px auto;
+    }
+    .conteiner_service{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+        top: 10%;
+    }
+    .card_service{
+        max-width: 80%;
+        padding: 10px;
+        text-align: center;
+        color: black;
+        cursor: pointer;
+    }
+    .icon_service{
+        display: inline-block;
+        width: 70px;
+        height: 70px;
+        border: solid 3px rgba(0,25,59,1);
+        transform: rotate(45deg);
+        margin-bottom: 30px;
+        margin-top: 16px;
+        transition: 0.3s linear;
+    }
+    .icon_service i{
+        line-height: 70px;
+        transform: rotate(-45deg);
+        font-size: 26px;
+    }
+    .card_service:hover .icon_service{
+        background-color: white;
+        color: rgba(0,25,59,1);
+    }
+    .desc{
+        font-size: 16px;
+    }
+    .area_atuacao{
+        color: black;
+    }
+    /*Página de projetos*/
+    #main_projetos{
+        width: 100%;
+        height: 1200px;
+        background-color: #696969;
+    }
+
+    /*Contato*/
+    #main_contato{
+        width: 100%;
+        height: 1200px;
+        background-color: #f5f5f5;
+    }
+    .contato{
+        width: 100%;
+        height: 1100px;
+        overflow: hidden;
+        position: relative;
+        top:5%;
+        background-color: #f5f5f5;
+    }
+    .conteiner_contato{
+        width: 100%;
+        height: 1100px;
+        position: relative;
+        top:1%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;  
+        background-color: #f5f5f5;
+    }
+    .localizacao{
+        width: 90%;
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content:space-around;
+        order: 1
+    }
+    .localizacao h2{
+        width: 100%;
+    }
+    .mapa{
+        width:100%;
+        height: 200px;
+        border: none;
+        border-radius: 3px;
+        box-shadow: 5px 5px  10px #696969;
+        margin-top: 5px;
+    }
+    .infor{
+        width: 100%;
+        height: 180px; 
+    }
+    .links{
+        width: 100%;
+        height: 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-content: flex-end;
+    }
+    .mostrar-bt{
+        position: relative;
+        left: 2%;
+    }
+    .social{
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-content: flex-end;
+        align-items: center;
+    }
+    .social i{
+        color: rgba(0,25,59,1);
+        font-size: 22px;
+        padding: 5px; 
+        cursor: pointer;
+        transition: 0.4s;
+    }
+    .icones{
+        width: 150px;
+        height: 28px;   
+        border-radius: 4px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content:space-around;
+    }
+    .infor ul{
+        list-style: none;
+    }
+    .infor ul li{
+        width: 100%;
+        height: 22px;
+        margin: 8px auto;
+        font-weight: bold;
+    }
+    .formulario{
+        width: 90%;
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-around;
+        order: 2;
+        margin-top: 60px;
+        position: relative;
+    }
+    .formulario h2{
+        width: 100%;
+    }
+    .formulario h3{
+        width: 93%;
+        text-decoration: none;
+        font-style: none;
+        margin: 8px;
+    }
+    .select{
+        width: 90%;
+        height: 35px;
+        display: flex;
+        justify-content: space-around;
+        margin: 10px auto;
+    }
+    .select label{
+        width: 45%;
+        font-size: 14px;
+        text-align: center;
+    }
+    label[for],button {
+        display: block;
+    }
+    input[type="text"],input[type="email"]{
+        width: 90%;
+        height: 35px;
+        padding: 0 12px;
+        border: 2px solid #ddd;
+        border-radius: 4px;
+        outline: 0;
+        transition: .2s;
+        margin-top: 5px;
+        font-size: 14px;
+    }
+    .sms{
+        width: 93%;
+        height: 150px;
+        border-radius: 4px;
+        border: 2px solid #ddd;
+        font-size: 16px;
+    }
+    button {
+        width: 20%;
+        height: 42px;
+        border-radius: 3px;
+        order: 4;
+        cursor: pointer;    
+        border: 0;
+        color: white;
+        font-size: 1.2em;
+        margin-left: 75%;
+        margin-top: .5em;
+        background-color: rgba(0,25,59,1);
+    }
+    input:focus{
+        border-color: rgba(0,25,59,1);
+    }
+    input[value="Outro"] + input {
+        display: none;
+    }
+    input[value="Outro"]:checked + input {
+        display: block;
+    }
 }

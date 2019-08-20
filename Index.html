@@ -14,42 +14,38 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <script src="https://kit.fontawesome.com/2d7d674aab.js"></script>
 </head>
-<body onload="anima_scroll()">
-    <div class="main_menu">
-        <div class="logo_menu">
-            <a href="Index.html">
-                <img src="IMG/LogoPNG.png">
-            </a>
-        </div>
-        <nav class="menu">
-            <ul>
-                <li class="menu_item"><a href="#home">Home</a></li>
-                <li class="menu_item"><a href="#main_sobre">Sobre</a></li>
-                <li class="menu_item"><a href="#main_service">Serviços</a></li>
-                <li class="menu_item"><a href="#main_projetos">Projetos</a></li>
-                <li class="menu_item"><a href="#main_contato">Contato</a></li>
-                <!-- <i class="material-icons">
-                        assignment
-                        </i>  icone projetos
-                    
-                    <i class="material-icons">
-                      assignment_ind
-                        </i> icone contato
-                    
-                    <i class="material-icons">
-                        build
-                        </i> icone serviços 
-                    
-                    <i class="material-icons">
-                        home
-                        </i> icone home
-                    
-                    <i class="material-icons">
-                    search
-                        </i> icone sobre-->
+<body onload="animabtn(),anima_scroll()">
+        <!--Menu-->
+        <nav class="navbar" id="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="IMG/LogoPNG.png">
+                </a>
+            </div>
+            <div class="menu-icon" id="icone">
+                <div class="menu-linha linha1"></div>
+                <div class="menu-linha linha2"></div>
+                <div class="menu-linha linha3"></div>
+            </div>
+
+            <ul class="menu-lista">
+                <li class="menu-item">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#main_sobre">Sobre</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#main_service">Serviços</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#main_projetos">Projetos</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#main_contato">Contato</a>
+                </li>
             </ul>
         </nav>
-    </div>
     <div class="main">
         <!--Home-->
         <section id="home" class="main_home" >
@@ -107,56 +103,29 @@
                 <div class="conteiner_service">
                     <div class="card_service">
                         <div class="icon_service">
-                            <i class="material-icons">build</i>
+                                <i class="material-icons">extension</i>
                         </div>
-                        <div class="service_title">Web-Design</div>
+                        <div class="service_title">Sites e Sistemas Web</div>
                         <div class="desc">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae aliquid beatae exercitationem laudantium maiores tempora sed error neque optio earum! Ex ducimus a laboriosam ullam! Assumenda facere minus repellendus porro.
+                                Trabalhamos com designs modernos, sempre preocupados com a melhor acessibilidade de nossos usuários.
                         </div>
                     </div>
                     <div class="card_service">
                         <div class="icon_service">
-                            <i class="material-icons">build</i>
+                                <i class="material-icons">stay_current_portrait</i>
                         </div>
-                        <div class="service_title">Web-Design</div>
+                        <div class="service_title">Aplicativos Mobile</div>
                         <div class="desc">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae aliquid beatae exercitationem laudantium maiores tempora sed error neque optio earum! Ex ducimus a laboriosam ullam! Assumenda facere minus repellendus porro.
+                                Trabalhamos com aplicativos mobile para as plataformas IOS e Android.
                         </div>
                     </div>
                     <div class="card_service">
                         <div class="icon_service">
-                            <i class="material-icons">build</i>
+                                <i class="material-icons">desktop_mac</i>
                         </div>
-                        <div class="service_title">Web-Design</div>
+                        <div class="service_title">Sistemas Desktop</div>
                         <div class="desc">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae aliquid beatae exercitationem laudantium maiores tempora sed error neque optio earum! Ex ducimus a laboriosam ullam! Assumenda facere minus repellendus porro.
-                        </div>
-                    </div>
-                    <div class="card_service">
-                        <div class="icon_service">
-                            <i class="material-icons">build</i>
-                        </div>
-                        <div class="service_title">Web-Design</div>
-                        <div class="desc">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae aliquid beatae exercitationem laudantium maiores tempora sed error neque optio earum! Ex ducimus a laboriosam ullam! Assumenda facere minus repellendus porro.
-                        </div>
-                    </div>
-                    <div class="card_service">
-                        <div class="icon_service">
-                            <i class="material-icons">build</i>
-                        </div>
-                        <div class="service_title">Web-Design</div>
-                        <div class="desc">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae aliquid beatae exercitationem laudantium maiores tempora sed error neque optio earum! Ex ducimus a laboriosam ullam! Assumenda facere minus repellendus porro.
-                        </div>
-                    </div>
-                    <div class="card_service">
-                        <div class="icon_service">
-                            <i class="material-icons">build</i>
-                        </div>
-                        <div class="service_title">Web-Design</div>
-                        <div class="desc">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae aliquid beatae exercitationem laudantium maiores tempora sed error neque optio earum! Ex ducimus a laboriosam ullam! Assumenda facere minus repellendus porro.
+                                Desenvolvemos aplicações sob medida para nossos clientes.
                         </div>
                     </div>
                 </div>
@@ -170,6 +139,7 @@
             <div class="contato">
                 <div class="conteiner_contato">
                     <div class="formulario">
+                        <h2>Envie-nos uma menssagem</h2>
                         <h3>Nome Completo</h3>
                         <input id="nome" type="text" name="nome" required pattern="[A-Za-z ']{4,}" title="O nome precisa ter pelo menos 4 caracteres" placeholder="Seu nome aqui">
                         <h3>Email</h3>
@@ -208,8 +178,8 @@
                         <div class="links">
                             <div class="social">
                                 <div class="icones">
-                                    <a href="#" title="Github"><i class="fab fa-github"></i></a>
-                                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://github.com/loopisjr" title="Github"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.instagram.com/loopisjr/" title="Instagram"><i class="fab fa-instagram"></i></a>
                                     <a href="#" title="Gmail"><i class="fas fa-envelope-square"></i></a>
                                 </div>
                             </div>

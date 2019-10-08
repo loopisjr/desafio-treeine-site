@@ -208,8 +208,55 @@
 /*Página Projetos*/
 #main_projetos{
     width: 100%;
-    height: 720px;
-    background-color: #696969;
+    height: 750px;
+    background-color: #B0E2FF;
+}
+.projetos{
+    width: 100%;
+    height: 680px;
+    overflow: hidden;
+    position: relative;
+    top:10%;
+}
+.img_logo_fsm{
+    margin-left: 320px;
+    height: 230px;
+}
+.img_antigo_sistema{
+    height: 180px;
+}
+.img_novo_sistema{
+    height: 180px;
+}
+.projeto_sup{
+    display: flex;
+    flex-direction: row;
+}
+.sobre_projeto_sup{
+    margin-left: 40px;
+    width: 200px;
+    height: 190px;
+    border: solid 1px #0000CD;
+    border-radius: 3px;
+    padding: 20px;
+}
+.projeto_img_botton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+.projeto_descricao{
+    width: 250px;
+}
+.projeto_seta{
+    width: 150px;
+}
+.projeto_descricao{
+    border: solid 1px #1E90FF;
+    border-radius: 3px;
+    padding: 20px;
 }
 
 /*Pagina Serviços*/

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Home</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <!--Links Externos-->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Menu-->
+    <nav class="navbar lax" data-lax-translate-y="0 0, 400 20">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/LogoPNG.png">
+            </a>
+        </div>
+        <ul class="menu-lista">
+            <li class="menu-item">
+                <a href="#home">Home</a>
+            </li>
+            <li class="menu-item">
+                <a href="#servico">Serviços</a>
+            </li>
+            <li class="menu-item">
+                <a href="#contato">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--Seções da página-->
+
+    <div class="main">
+        <section id="home" class="lax" data-lax-opacity="300 0, 0 1">
+            <div class="main-home lax" data-lax-opacity="300 0, 0 1">
+                <div class="texto-empresa lax" data-lax-translate-y="0 0, 400 -500">
+                    <p class="titulo-sobre">Sobre empresa júnior</p>
+                    <p class="texto-sobre">
+                        É associação formada e gerida por alunos de um curso superior, cujos principais objetivos são,
+                        fomentar o aprendizado prático do universitário
+                        em sua área de atuação e aproxima-lo do mercado de trabalho.
+                    </p>
+                </div>
+                <div class="logo-home lax" data-lax-translate-y="0 0, 500 -500">
+                    <div class="logo"></div>
+                    <div class="linha"></div>
+                    <h1 class="sub-titulo">Soluções Tecnólogicas</h1>
+                </div>
+                <div class="cards lax" data-lax-translate-y="0 0, 400 -500">
+                    <div class="card-sobre">
+                        <div class="icone-card icone-missao"></div>
+                        <p class="titulo-card">Missão</p>
+                        <p class="texto-card">
+                            Prestar serviços de desenvolvimento de software e consultoria em TI com qualidade,
+                            partilhando com nossos membros e parceiros o sucesso adquirido.
+                        </p>
+                    </div>
+                    <div class="card-sobre">
+                        <div class="icone-card icone-visao"></div>
+                        <p class="titulo-card">Visão</p>
+                        <p class="texto-card">
+                            Ser referênciar como empresa júnior no estado, atendo de forma efetiva
+                            nossos clientes e contribuindo com a comunidade acadêmica.
+                        </p>
+                    </div>
+                    <div class="card-sobre">
+                        <div class="icone-card icone-valores"></div>
+                        <p class="titulo-card">Valores</p>
+                        <p class="texto-card">
+                            <ul>
+                                <li>Compromisso;</li>
+                                <li>Ética;</li>
+                                <li>Iniciativa;</li>
+                                <li>Sinergia.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="home-contatos">
+                    <a href="https://www.instagram.com/loopisjr/" class="lax" data-lax-translate-y="0 0, 400 -500" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/loopisjr" class="lax" data-lax-translate-y="0 0, 400 -500" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/loopisjr/" class="lax" data-lax-translate-y="0 0, 400 -500" title="Facebook">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--Seção de Serviços-->
+
+        <section id="servico">
+            <div class="main-servico">
+
+            </div>
+        </section>
+    </div>
+
+    <!--Scripts Externos-->
+
+    <script src="https://kit.fontawesome.com/bb4e95dc31.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+
+    <!--Script Local-->
+    
+    <script src='js/scriptLocal.js'></script>
+    <script>
+        window.onload = function () {
+            animaScroll();
+            lax.setup() // init
+
+            const updateLax = () => {
+                lax.update(window.scrollY)
+                window.requestAnimationFrame(updateLax)
+            }
+
+            window.requestAnimationFrame(updateLax)
+        }
+    </script>
+</body>
+
+</html>

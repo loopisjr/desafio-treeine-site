@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Menu/TopBar */
+
+.navbar{
+    width: 98%;
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-content: center;
+    align-items: center;
+    z-index: 10;
+    background-color: transparent;
+    position: fixed;
+}
+.change{
+    left: 0;
+}
+.menu-lista{
+    width: 70%;
+    height: 48px;
+    text-align:center;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu-item{
+    list-style: none;
+    margin: 12px;
+    float: left;
+}
+
+.menu-item a{
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    letter-spacing: 1px;
+    position: relative;
+    padding: 3px 0;
+}
+.menu-item a::after{
+    content: " ";
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    transform: scaleX(0);
+    transition: all 0.3s;
+}
+.menu-item a::after{
+    bottom: -2px;
+}
+.menu-item a:hover::after{
+    transform: scaleX(1)
+}
+.menu-item i{
+    display: none;
+}
+.logo{
+    width: 12%;
+    height: 48px;
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+
+}
+.logo img{
+    max-width: 70%;
+    position: relative;
+    top: 25%;
+
+}
+.navbar .ativada a{
+    border-bottom: solid 2px #fff;
+}
+
+body{
+    background-color: rgb(33,33,33);
+}
+
+/*Seções da página*/
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    animation-name: aparecer;
+    animation-duration: 2s;
+}
+
+@keyframes aparecer{
+    0%{
+       opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/*Home da página*/
+
+#home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/backHome.jpg);
+    background-position: center;
+    background-size: 100%;
+}
+
+.main-home{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(33,33,33,0.8);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+}
+.texto-empresa{
+    width: 46%;
+    height:28vh;
+    background-color: rgb(33,33,33,0.4);
+    border-radius: 20px;
+    box-shadow: -10px 10px 20px 3px rgba(0, 0, 0, 0.28);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.titulo-sobre{
+    text-align: center;
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: bold;
+    margin: 10px;
+    text-transform: capitalize;
+}
+
+.texto-sobre{
+    text-align: center;
+    font-size: 1.1em;
+    color: #fff;
+    max-width: 100vh;
+    width: 80%;
+}
+.logo-home{
+    width: 40%;
+    height: 45vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:center;
+    align-content: center;
+    align-items: center;
+}
+.logo-home .logo{
+    width: 95%;
+    height: 18vh;
+    background-image: url(../img/LogoPNG.png);
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+.logo-home .linha{
+    width: 95%;
+    height: 2px;
+    border-radius: 3px;
+    background-color: #fff;
+    margin: 5px;
+}
+.logo-home .sub-titulo{
+    color: #fff;
+}
+.cards{
+    width: 50%;
+    height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+}
+.card-sobre{
+    width: 28%;
+    height: 31vh;
+    border-radius: 10px;
+    background-color:rgb(33,33,33,0.4);
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    margin: 10px;
+    transition: 0.4s;
+}
+.card-sobre:hover{
+    transform: scale(1.1);
+    box-shadow: 2px -2px 25px 1px rgba(0, 0, 0, 0.28);
+}
+.icone-card{
+    width: 8vh;
+    height: 8vh;
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    margin: 5px;
+}
+
+.icone-missao{
+    background-image: url(..//img/target.svg);
+}
+
+.icone-visao{
+    background-image: url(../img/presentation.svg);
+}
+.icone-valores{
+    background-image: url(../img/diamond.svg);
+}
+
+.titulo-card{
+    text-align: center;
+    font-size: 1.1em;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin: 10px;
+    border-bottom: solid 1px #fff;
+}
+
+.texto-card{
+    max-width: 90%;
+    text-align: center;
+    font-size: 0.8em;
+}
+.home-contatos{
+    width: 39%;
+    height: 31vh;
+    font-size: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: flex-end;
+    color: #fff;
+}
+.home-contatos a{
+    color: #fff;
+}
+.home-contatos i{
+    color: rgb(66,66,66);
+    font-size: 1.8;
+    padding: 5px; 
+    cursor: pointer;
+    transition: 0.4s;
+    margin: 5px;
+}
+.home-contatos i:hover{
+    transform: scale(1.3);
+    color: #fff;
+}
+
+/*Seção de Serviços*/
+
+#servico{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/backService.jpg);
+    background-position: center;;
+    background-size: 100%;
+}
+.main-servico{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(33,33,33,0.8);
+}
